@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coba LocalStorage</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <style>
+            body {
+                background-color: bisque;
+
+            }
+            input {
+                padding: 7px 5px;
+                border-radius: 5px;
+                margin-top: 5px;
+                border: none;
+               margin-top: 5px;
+            }
+
+            button {
+                padding: 7px 5px;
+                border-radius: 5px;
+                display: flex;
+                flex-direction: column
+              
+            }
+
+            .container-fluid {
+                max-width: 600px;
+                margin: 50px auto;
+                
+               
+            }
+
+            h1 {
+                align-items: center;
+                text-align: center;
+            }
+
+
+    </style>
+</head>
+<body>
+   <div class="container-fluid">
+    <div class="row mt-10">
+       
+    <h1 class="text" >Silahkan Input Data</h1>
+    <input type="text" id="inputNama" placeholder="Input nama Guru" class="form-control mb-3">
+    <br>
+    <input type="text" id="inputPelajaran" placeholder="Input nama Pelajaran" class="form-control mb-3" >
+
+    <button onclick="tambahGuru()" class="btn btn-primary ">Tambah Guru</button>
+<!-- 
+    <select id="filterJumlah" onchange="tampilkanData()" class>
+  <option value="10">Tampilkan 10</option>
+  <option value="50">Tampilkan 50</option>
+  <option value="100">Tampilkan 100</option>
+</select> -->
+
+    <table class="table table-bordered table-striped mt-4">
+        <thead class="table-info">
+            <tr>
+                <th>No</th>
+                <th>Nama Guru</th>
+                <th>Mapel</th>
+                <th>Status</th>
+                <th>Aksi</th>
+            </tr>
+        </thead>
+        
+
+        <tbody id="tabelGuru">
+        </tbody>
+    </table>
+
+    
+
+
+</div>
+   </div>
+       <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+   <script src="javascript.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script> 
+</body>
+</html>
